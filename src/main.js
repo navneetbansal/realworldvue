@@ -20,10 +20,8 @@ new Vue({
 			const response = await UserService.getUser();
 			// console.log(response);
 			this.user = response.data.user;
-			console.log('logged in');
 		}
 		else {
-			console.log('not logged');
 		}
 		this.loading = false;
 	}
